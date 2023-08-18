@@ -57,6 +57,7 @@ cmd + shift - return : open -n -a "Brave Browser"
 
 # moves focus between windows in the current focused display
 alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 
@@ -109,7 +110,7 @@ shift + alt - 9 : yabai -m window --space 9
 shift + alt - 0 : yabai -m window --space 10
 
 # balance size of windows
-shift + alt - 0 : yabai -m space --balance
+ctrl + alt - 0 : yabai -m space --balance
 
 # increase window size
 ctrl + alt - h : yabai -m window --resize left:-40:0
