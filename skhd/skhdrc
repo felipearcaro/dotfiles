@@ -43,11 +43,15 @@
 # decrease gap in focused space
 #shift + alt - g : yabai -m space --gap rel:-10
 
-# =========================================
+# toggle window parent zoom
+#alt - d : yabai -m window --focus mouse && \
+#          yabai -m window --toggle zoom-parent
 
 # close window
-# TODO: focus on another window after closing
-alt - x : yabai -m window --close
+# using cmd + q on Mac instead
+#alt - x : yabai -m window --close
+
+# =========================================
 
 # open terminal
 cmd - return : open -n -a "iTerm";
@@ -70,9 +74,6 @@ alt - r : yabai -m space --rotate 90
 # mirror tree y-axis
 alt - y : yabai -m space --mirror y-axis
 
-# toggle window parent zoom
-alt - d : yabai -m window --focus mouse && \
-          yabai -m window --toggle zoom-parent
 
 # float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float;\
