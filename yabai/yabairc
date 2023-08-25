@@ -33,9 +33,13 @@ yabai -m config layout                       bsp
 ## makes system preferences always floating
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
-#TODO: Make the following lines work
-yabai -m rule --add app="^Brave Broswer$" space=^2
-yabai -m rule --add app="^iTerm$" space=^1
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Photos$" manage=off
+yabai -m rule --add app="^FaceTime$" manage=off
+yabai -m rule --add app="^Day One$" manage=off
+yabai -m rule --add app="^NordVPN$" manage=off
+yabai -m rule --add app="^NordPass$" manage=off
+yabai -m rule --add app="^Simplenote$" manage=off
 
 # signals
 ## updates workspace widget when space changes

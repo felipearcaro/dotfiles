@@ -55,6 +55,10 @@ return packer.startup(function(use)
   use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
   use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
+  use("davidhalter/jedi-vim") -- autocomplete for python
+  -- had to run sudo port install py-neovim for it to work with vim support for python 3
+
+  use("romgrk/todoist.nvim") -- use todoist in vim
 
   if packer_bootstrap then
     require("packer").sync()
