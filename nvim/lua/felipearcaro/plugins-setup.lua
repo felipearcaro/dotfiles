@@ -32,7 +32,7 @@ return packer.startup(function(use)
   use("wbthomason/packer.nvim") -- packer can manage itself
 
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-  
+
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
 
@@ -57,8 +57,6 @@ return packer.startup(function(use)
 
   use("davidhalter/jedi-vim") -- autocomplete for python
   -- had to run sudo port install py-neovim for it to work with vim support for python 3
-
-  use("romgrk/todoist.nvim") -- use todoist in vim
 
   if packer_bootstrap then
     require("packer").sync()
